@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		
+		<!--CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	    <script src="js/login_var.js" language="javascript" type="text/javascript"></script>
+
+		
+		<title>TP4 Login</title>
+	</head>
+	<body>
+		<!--NavBar-->
+		<nav class="orange darken-3">
+		   	<div class="nav-wrapper container ">
+		    	<a href="#" class="brand-logo center">Logo</a>
+		      	<ul id="nav-mobile" class="right hide-on-med-and-down">
+		        	<li><a href="intranet.html">Login intranet institucional</a></li>
+		    	</ul>
+		    </div>
+		</nav>
+
+		<!--Espacios-->
+		<br>
+
+		<!--Formulario / Diseños Materialize-->
+		<div class="container section  center">
+			<div class="row ">
+			   	<div class="col s12 m6 offset-m3">
+			    	<div class="card orange darken-3  z-depth-5">
+			        	<div class="card-content">
+							<h4 class="white-text center-align"><b>Iniciar Sesión</b></h4>
+			        		<br>
+							<form method="post" onsubmit="return tp4validar ();">
+								
+								<input type="text" name=login placeholder="Nombre de Usuario" id="usuario" onblur="valespnombre (this);"> 
+								<input type="password" name=clave placeholder="Clave" id="clave" minlength="8" maxlength="15" onblur="valesclave (this);">
+								<br><br>
+								<input type="submit" class="btn-large  white black-text" name="login" value="Login">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+</DOCTYPE>
